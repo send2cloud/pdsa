@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
@@ -24,7 +25,7 @@
 </header>
 <!-- NAVIGATIONS -->
 <nav id="main-nav">
-  <ul>
+  <ul style="font-family: 'Montserrat';">
     <li> <a href="#page1">About Us</a> </li>
     <li> <a href="#page2" class="current">Our Menu</a> </li>
     <li> <a href="#page3">Catering</a> </li>
@@ -35,12 +36,12 @@
 <!-- Main Page START -->
 <main>
   <div id="masthead" style="background-image:url(img/ghee.jpg); background-size:cover; height:350px">
-    <div class="container">
+    <div class="container"  align="center">
       <div class="row">
         <div class="col-md-7" style="color:white">
-          <h1 id="page0" style="font-family: 'Raleway', sans-serif;text-shadow: 2px 2px black;">Main Screen
-            <p class="lead">Quick. Fast. Food</p>
-          </h1>
+          <h1 id="page0" style="font-family: 'Rock Salt', sans-serif;text-shadow: 3px 2px 4px black;">Dosa House</h1>
+            <p class="lead"  style="font-family: 'Montserrat', sans-serif;text-shadow: 1px 2px 2px black;">Quick. Fast. Food</p>
+          
         </div>
       </div>
     </div>
@@ -56,12 +57,13 @@
 
   <div class="minicart-wrap">
     <div class="minicart-body cart-toggle">
-      <h2 class="xsm text-uppercase text-center">Carryout order</h2>
+    <p>&nbsp; </p>
+      <h2 class="xsm text-uppercase text-center"  style="font-family: 'Rock Salt';">TOGO Order</h2>
       <ul class="minicart-list">
         <li>
           <div class="product-thumb"> <img src="http://lorempixel.com/30/30/food/" alt=""> </div>
           <div class="product-name"> <a href="#">Onion Ootappa</a> </div>
-          <div class="qty-wrap"> <span class="product-quantity"> <span class="quantity">2</span> serves. </span> <span class="amount">$48</span> </div>
+          <div class="qty-wrap"> <span class="product-quantity"> <span class="quantity">2</span> </span> <span class="amount">$48</span> </div>
           <div class="product-remove"> <a href="#">x</a> </div>
         </li>
         <li>
@@ -73,18 +75,19 @@
       </ul>
       <div class="minicart-total"> Total <span class="amount pull-right">$120</span> </div>
  
-            <div class="minicart-footer">
-             <div class="product-name"> Your Details:<br> 
-                <input class="text-warning" id="Phone" placeholder="Name">
-              </div>
-              <br>
-              <div class="product-name"> 
+           
+             <div class="minicart-total"> Your Details:<br> <br>
+               <p> <input class="text-warning" id="Phone" placeholder="Name">
+              
+              <br><br>
+              
                 <input type="tel" class="text-warning" id="Phone" placeholder="Phone">
+                </p>
               </div>
               <br>
                 <a href="#0" class="checkout-btn">Place Order</a> </div>
     
-    </div>
+    
   </div>
 
 </div>
