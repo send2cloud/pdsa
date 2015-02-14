@@ -268,8 +268,8 @@ header {
 	-ms-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
 	transform: translateY(-50%);
-	width: 32px;
-	height: 32px;
+	width: 90px;
+	height: 90px;
 	border-radius: 50%;
 	background: url("../img/cd-remove-item.svg") no-repeat center center;
 }
@@ -494,11 +494,11 @@ MiniCart
 }
 .minicart-wrap .minicart-body .minicart-list {
 	margin: 0;
-	border-top: 4px solid #eee;
+	border-top: 8px solid #eee;
 }
 .minicart-wrap .minicart-body .minicart-list li {
 	margin: 0;
-	padding: 12px 18px;
+	padding: 20px 5px;
 	position: relative;
 }
 .minicart-wrap .minicart-body .minicart-list li:before {
@@ -857,7 +857,7 @@ background:#000
 .xsm a, h6 a {
 	color: inherit;
 }
-.select-custom {
+/*.select-custom {
 	position: relative;
 	z-index: 9;
 }
@@ -897,4 +897,4 @@ select option {
 	right: 17px;
 	font-size: 16px;
 	color: #fff;
-}
+}*/
