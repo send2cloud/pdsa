@@ -115,8 +115,13 @@ header {
 #cd-cart-trigger {
 	right: 0;
 }
+
+
 #cd-cart-trigger a {
-	background: #26292f url("../img/sidecart/cd-cart.svg") no-repeat center center;
+	background:url("../img/sidecart/cd-cart.svg") no-repeat center center;
+	/*ram-cart-green*/
+	/*background: #26292f;*/
+	background-color:green;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -128,9 +133,13 @@ header {
 	position: relative;
 	width: 100px;
 	border-left: none;
-	background-color: #26292f;
+	/*ram-cart-green */
+	/*background-color: #26292f;*/
+	background-color:green;
 }
+
 }
+
 #main-nav, #cd-cart {
 	position: fixed;
 	top: 0;
