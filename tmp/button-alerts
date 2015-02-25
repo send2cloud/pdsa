@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<script type="application/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+<script type="application/javascript">
+$(document).ready(function() {
+$(".btn").on("click", function() {
+    $(".alert").removeClass("in").show();
+	$(".alert").delay(200).addClass("in").fadeOut(2000);
+});
+});
+</script>
+</head>
+
+<body>
+<div class=" col-xs-2">
+<button class="btn">Add to Cart</button>
+<div class="alert small alert-success fade ">
+
+  Added to Cart! </div>
+</div>
+<div class="col-xs-10">
+<p>
+In the next few years, we see a significant amount of effort to run web apps in web workers. Asynchronous APIs are created to interact with anything that runs on the main thread, like layout, storage, etc. reapp.io is doing a lot of interesting research in this vein.
+</p>
+</div>
+</body>
+</html>
