@@ -41,7 +41,16 @@ catch(e){window.attachEvent("onload", $buo_f)}
 <header class="shadow" >
   <div id="logo"><img  src="img/dosa-logo2.png" width="100" alt="Homepage"></div>
   <div id="cd-hamburger-menu"><a class="cd-img-replace" href="#0">Menu</a></div>
-  <div id="cd-cart-trigger"><a class="cd-img-replace" href="#0">Cart</a></div>
+  <div id="cd-cart-trigger">
+  <!--\\ Cart Manipulation -->
+ <!-- If cart has item, it changes background & wiggles -->
+ <a class="cd-img-replace wiggle-me" style="background-color:red;" href="#0">Cart</a>
+ 
+ <!-- If cart is empty-->
+ <!-- <a class="cd-img-replace" style="background-color:#26292f;" href="#0">Cart</a>-->
+
+  <!--// End Cart Manipulation -->
+  </div>
 </header>
 <!-- NAVIGATIONS -->
 <div id="cd-cart-trigger">

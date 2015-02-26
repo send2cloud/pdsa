@@ -29,11 +29,13 @@ a {
 img {
 	max-width: 100%;
 }
+
 /* -------------------------------- 
 
 Modules - reusable parts of our design
 
 -------------------------------- */
+
 .shadow {
 	-webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 	-moz-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
@@ -118,10 +120,10 @@ header {
 }
 
 #cd-cart-trigger a {
-	background:url("../img/sidecart/cd-cart.svg") no-repeat center center;
+	background: url("../img/sidecart/cd-cart.svg") no-repeat center center;
 	/*ram-cart-green*/
 	/*background: #26292f;*/
-	background-color:green;
+	
 }
 
 @media only screen and (min-width: 1200px) {
@@ -135,7 +137,7 @@ header {
 	border-left: none;
 	/*ram-cart-green */
 	/*background-color: #26292f;*/
-	background-color:green;
+
 }
 
 }
@@ -869,3 +871,12 @@ background:#000
 .xsm a, h6 a {
 	color: inherit;
 }
+
+a.wiggle-me 
+@-ms-keyframes wiggle{0%{-ms-transform:rotate(3deg);}50%{-ms-transform:rotate(-3deg);}100%{-ms-transform:rotate(3deg);}}
+@-moz-keyframes wiggle{0%{-moz-transform:rotate(3deg);}50%{-moz-transform:rotate(-3deg);}100%{-moz-transform:rotate(3deg);}}
+@-webkit-keyframes wiggle{0%{-webkit-transform:rotate(3deg);}50%{-webkit-transform:rotate(-3deg);}100%{-webkit-transform:rotate(3deg);}}
+@keyframes wiggle{0%{transform:rotate(3deg);}50%{transform:rotate(-3deg);}100%{transform: rotate(3deg);}}
+/*a.wiggle-me:hover{-ms-animation:wiggle .3s 2;-moz-animation:wiggle .3s 2;-webkit-animation:wiggle .2s 2;animation:wiggle .3s 2;}
+*/
+a.wiggle-me{-ms-animation:wiggle .3s 2;-moz-animation:wiggle .3s 2;-webkit-animation:wiggle .2s 2;animation:wiggle .3s 2;}
