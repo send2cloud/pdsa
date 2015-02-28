@@ -8,13 +8,78 @@
 <title>Welcome</title>
 <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
 <style>
+/* 
+    Starry Night DEMO
+    chriscoyier@gmail.com
+    http://chriscoyier.net
+*/
+
+* { margin: 0; padding: 0; }
+
+html { overflow-y: scroll; }
+
+.clear {
+	clear: both;
+}
+
+.floatLeft {
+	float: left;
+}
+
+.floatRight {
+	float: right;
+}
+
+
+
+@-webkit-keyframes STAR-MOVE {
+	from {
+		left: 0;
+		top: 0;
+	}
+	to { 
+		left: -10000px;
+		top: -2000px;
+	}
+}
+
+
+
+#midground {
+	background: url(img/midground.png) repeat 20% 20%;
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	z-index: 200;
+	
+	-webkit-animation-name: STAR-MOVE;
+	-webkit-animation-duration: 150s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+/*#foreground {
+	background: url(img/foreground.png) repeat 35% 35%;
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	z-index: 1;
+	
+	-webkit-animation-name: STAR-MOVE;
+	-webkit-animation-duration: 100s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+*/
+
+</style>
+<style>
 body {
-	background-color: yellow;
+	background-color: #DC5600;
 	color: #555;
 	font-size: 1.1em;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .element {
+	z-index:500;
 	width: 200px;
 	height: 200px;
 	background-color: orange;
@@ -48,7 +113,7 @@ body {
 </style>
 </head>
 
-<body >
+<body >  
 <div class=" col-xs-12">
 <!--menu-->
 <div class=" col-xs-2" >
@@ -114,5 +179,8 @@ body {
 </div>
 <!--//menu-->
 </div>
+  <div id="background"></div>
+    <div id="midground"></div>
+    <div id="foreground"></div>
 </body>
 </html>
